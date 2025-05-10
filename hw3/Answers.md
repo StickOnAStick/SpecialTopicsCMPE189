@@ -170,3 +170,10 @@ Flow 2 (10.0.0.3 -> 10.0.0.2)
 - Wireless host sending this tcp segment is: 00:16:b6:f7:1d:51
 - IP of wireless host:: 192.168.1.109
 - Destination of IP is 128.199.245.12 (host).
+
+**8. Find the 802.11 frame containing the SYNACK segment for this TCP session. What are three MAC address fields in the 802.11 frame? Which MAC address in this frame corresponds to the host? To the access point? To the first-hop router? Does the sender MAC address in the frame correspond to the IP address of the device that sent the TCP segment encapsulated within this datagram? (Hint: review Figure 6.19 in the text if you are unsure of how to answer this question, or the corresponding part of the previous question. It’s particularly important that you understand this)**
+
+- BSS id:  00:16:b6:f7:1d:51
+- Dest (host): 00:13:02:d1:b6:4f
+- Source (first-hop): 00:16:b6:f4:eb:a8
+- The sender does not correspond to the IP of the server which sent the request since we had to go through the first-hop. 
